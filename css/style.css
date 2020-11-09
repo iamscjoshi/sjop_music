@@ -1,0 +1,171 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CSS Variables */
+
+:root {
+    --navbar-height: 59px;
+}
+
+
+/* navigation bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/* navigation bar: logo and image */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    filter: invert(100%);
+    margin: 3px 6px;
+    height: 59px;
+}
+
+
+/*navigation bar: list styling*/
+
+#navbar {
+    position: relative;
+    top: 0px;
+    font-family: 'Baloo 2', cursive;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* section */
+
+#Home {
+    display: flex;
+    padding: 3px 200px;
+    height: 579px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home p {
+    font-family: 'Baloo 2', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+#Home::before {
+    content: "";
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#Home h1 {
+    color: red;
+    text-align: center;
+}
+
+
+/* Utility Classes */
+
+.h-primary {
+    font-family: 'Baloo 2', cursive;
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 10px;
+    border: 2px solid white;
+    margin: 15px 256px;
+    color: black;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* videos section */
+
+#videos {
+    margin: 24px;
+    display: flex;
+}
+
+#videos .box {
+    flex-direction: column;
+    flex-flow: wrap;
+    flex-basis: fill;
+    border: 2px solid brown;
+    padding: 4px;
+    margin: 3px 6px;
+    border-radius: 20px;
+}
+
+#videos .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+#videos {}
+
+#videos {}

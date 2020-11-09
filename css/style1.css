@@ -1,0 +1,45 @@
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* CSS Variables */
+
+:root {
+    --navbar-height: 60px;
+}
+
+
+/* Navigation bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* navigation bar: logo and image */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo image {
+    height: 60px;
+    margin: 5px 10px;
+}
